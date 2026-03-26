@@ -1,221 +1,231 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Hyeonseo Oh",
+    "label": "Autonomous Driving & Control Systems Researcher",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "gustj5092@yonsei.ac.kr",
+    "phone": "(+82) 10-7128-5092",
+    "url": "https://gustj5092.github.io",
+    "summary": "Autonomous driving and control researcher specializing in safety-critical systems. Experienced in Robust Control Barrier Functions (CBF), MPC/MPPI, and real-time simulation. Co-author of an IEEE submission on uncertainty-aware CBF. Hands-on with ROS2 racing platforms, LiDAR/vision perception, and embedded motor control.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Seoul",
+      "countryCode": "KR",
+      "region": "Republic of Korea"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "gustj5092",
+        "url": "https://github.com//gustj5092"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
-    },
-    {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
-    },
-    {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Machine Learning and Control Systems (MLCS) Lab, Yonsei University",
+      "position": "Undergraduate Research Intern",
+      "url": "",
+      "startDate": "2025-01",
+      "endDate": "",
+      "summary": "Research on safety-critical control, robust CBF, MPPI, and autonomous racing.",
+      "highlights": [
+        "Designed a Robust CBF framework addressing worst-case state-estimation error and stochastic disturbances.",
+        "Co-author of IEEE L-CSS + CDC submission: 'Efficient and Robust Safety Control via CBFs Exploiting Worst-case Error Dynamics'.",
+        "Developing E2E racing controller integrated with Game-theoretic CBF for multi-agent racing.",
+        "Mitigated MPPI over-conservativeness in curves and over-aggressiveness on straights (Research Poster).",
+        "Completed 4-week intensive program: Python, MLP/CNN/RNN, LQR, MPC, QP, RL, and mobile robot experiments."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Yonsei University",
+      "url": "https://www.yonsei.ac.kr",
+      "area": "Mechanical Engineering",
+      "studyType": "B.S. (In Progress)",
+      "startDate": "2021-03",
+      "endDate": "",
       "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "courses": [
+        "Control Systems",
+        "Robotics",
+        "Machine Learning",
+        "Optimal Control",
+        "Embedded Systems (LabVIEW, myRIO)"
+      ]
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
-      "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    },
-    {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+      "institution": "Hanyang University Seoul High School",
+      "studyType": "High School",
+      "startDate": "2017-03",
+      "endDate": "2020-02"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Trajectory-Level Safety Verification for Multi-Modal End-to-End Planners via Post-Planning Re-ranking",
+      "publisher": "IEEE Autoware Workshop",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "1st Author. Verifies and re-ranks the 6 trajectory candidates output by E2E models (VAD) for real safety guarantees. Uses Autoware as the experimental platform."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    },
-    {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Efficient and Robust Safety Control via CBFs Exploiting Worst-case Error Dynamics",
+      "publisher": "IEEE L-CSS + CDC (Submitted)",
+      "releaseDate": "2025",
+      "url": "",
+      "summary": "Co-author. Designed Robust CBF for ACC, Half-space safety, and Collision Avoidance. Derived closed-form QCQP solution using KKT conditions."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "A1 Autonomous Driving Challenge",
+      "startDate": "2026-01",
+      "endDate": "",
+      "description": "Overall Team Lead. Developing Neuro-Strategic E2E racing model combining strategy and safety. Completed solo driving logic via Imitation Learning; currently applying Reinforcement Learning.",
+      "highlights": ["Team Lead", "Imitation Learning", "Reinforcement Learning", "E2E Racing"],
+      "url": ""
+    },
+    {
+      "name": "KSAE Formula Autonomous Competition",
+      "startDate": "2025-09",
+      "endDate": "2025-11",
+      "description": "Team Lead for full autonomous driving logic. Perception: RANSAC + DBSCAN cone classification, LiDAR-Camera fusion via HSV + Kalman Filter. Planning & Control: Cubic Spline, Curvature-based speed planning, Pure Pursuit + PID.",
+      "highlights": ["Team Lead", "LiDAR-Camera Fusion", "RANSAC", "DBSCAN", "Pure Pursuit", "PID"],
+      "url": ""
+    },
+    {
+      "name": "4th F1Tenth Korea Championship",
+      "startDate": "2025-10",
+      "endDate": "2025-11",
+      "description": "PCB board design & SW logic. Applied Reinforcement Learning (~1M steps in simulation) with SLAM-based map generation. Explored sim-to-real transfer challenges.",
+      "highlights": ["PCB Design", "Reinforcement Learning", "SLAM", "Sim-to-Real"],
+      "url": ""
+    },
+    {
+      "name": "Kookmin University Autonomous Driving Competition",
+      "startDate": "2025-04",
+      "endDate": "2025-06",
+      "description": "Team Lead. Lane keeping using BEV + HSV filtering + Sliding Window. Applied adaptive PID control based on road curvature.",
+      "highlights": ["Team Lead", "BEV", "HSV Filtering", "Sliding Window", "Adaptive PID"],
+      "url": ""
+    },
+    {
+      "name": "HL FMA Autonomous Driving Competition",
+      "startDate": "2025-06",
+      "endDate": "2025-09",
+      "description": "SW Team Lead. YOLOv8-based traffic light detection, RTK GPS with UTM coordinate conversion, GPS heading + coordinate derivative fusion for stability. Encouragement Award.",
+      "highlights": ["SW Team Lead", "YOLOv8", "RTK GPS", "UTM", "PID", "Encouragement Award"],
+      "url": ""
+    },
+    {
+      "name": "Electromagnetic Analysis of Electric Motor (FEMM)",
+      "startDate": "2025-09",
+      "endDate": "2025-11",
+      "description": "FEM-based simulation of DC/BLDC motors. Analyzed flux density, torque ripple, and efficiency across design parameters. Exported results to MATLAB for torque-speed curve analysis.",
+      "highlights": ["FEMM", "MATLAB", "DC/BLDC Motor", "FEM Simulation"],
+      "url": ""
+    },
+    {
+      "name": "Lead-Lag Controller Design (LabVIEW)",
+      "startDate": "2025-11",
+      "endDate": "2025-12",
+      "description": "Measured frequency response with DSA equipment. Designed Lead-Lag controller in MATLAB targeting ~30 Hz crossover frequency with sufficient phase margin. Validated via step response on LabVIEW real-time control system.",
+      "highlights": ["LabVIEW", "Lead-Lag Control", "MATLAB", "Phase Margin", "myRIO"],
+      "url": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "Encouragement Award",
+      "date": "2025",
+      "awarder": "HL FMA Autonomous Driving Competition",
+      "summary": "SW Team Lead. 1/5 scale autonomous vehicle — traffic light, parking, lane keeping, obstacle missions."
+    },
+    {
+      "title": "Encouragement Award (Individual)",
+      "date": "2025",
+      "awarder": "1st ZYXCAD Design Competition",
+      "summary": "Designed cultural heritage goods — earphone holder in the shape of a gayageum."
+    },
+    {
+      "title": "Outstanding Support Staff Award",
+      "date": "2024",
+      "awarder": "Yonsei University Disability Support Center",
+      "summary": "Recognized for excellence in assisting visually impaired students."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "YAX Robotics / Autonomous Driving Club",
+      "position": "Vice President & Co-founder",
+      "startDate": "2025-05",
+      "endDate": "",
+      "summary": "Co-founded club. Participating in autonomous driving competitions, latest paper studies, simulation-based experiments, and building AI/autonomous driving research culture at Yonsei."
+    },
+    {
+      "organization": "Rotaract (Volunteer Club)",
+      "position": "Math Mentor",
+      "startDate": "2024-03",
+      "endDate": "2024-06",
+      "summary": "Weekly math mentoring for children at a community welfare center in Seodaemun-gu."
+    },
+    {
+      "organization": "Yonsei University Disability Support Center",
+      "position": "Student Assistant",
+      "startDate": "2024-03",
+      "endDate": "2024-06",
+      "summary": "Assisted visually impaired students with coursework and produced braille materials. Received Outstanding Support Staff Award."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "LG Aimers 6th Cohort",
+      "date": "2025-02",
+      "issuer": "LG AI Research",
+      "summary": "Completed AI fundamentals course and AI hackathon on IVF pregnancy success prediction."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["Python", "C++", "MATLAB", "LabVIEW"]
+    },
+    {
+      "name": "Robotics & Autonomous Driving",
+      "keywords": ["ROS2", "CARLA", "MORAI", "Autoware", "SLAM", "LiDAR", "Camera Fusion"]
+    },
+    {
+      "name": "Control & Optimization",
+      "keywords": ["MPC", "MPPI", "CBF", "LQR", "PID", "QP", "QCQP", "Lead-Lag"]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": ["PyTorch", "CNN", "RNN", "Reinforcement Learning", "Imitation Learning", "YOLOv8"]
+    },
+    {
+      "name": "Hardware & Embedded",
+      "keywords": ["PCB Design", "Arduino", "myRIO", "Encoder", "FEMM"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Korean",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": ["Safety-Critical Control", "Robust CBF", "E2E Autonomous Racing", "Game-Theoretic Planning"]
+    },
+    {
+      "name": "Engineering",
+      "keywords": ["Robotics", "Autonomous Driving", "AI", "Mobility", "Mechatronics"]
     }
   ]
 }
