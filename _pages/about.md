@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.jpg          # assets/img/ 폴더에 본인 사진 업로드 후 파일명 맞춰주세요
+  image: profile.png          # assets/img/ 폴더에 본인 사진 업로드 후 파일명 맞춰주세요
   image_circular: false
   more_info: >
     <p>Seoul, Republic of Korea</p>
