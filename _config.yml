@@ -18,7 +18,7 @@ footer_text: >
 
 icon: "⚙️"  # the emoji used as the favicon
 
-url: https://[본인아이디].github.io  # ← 여기에 본인 GitHub 아이디로 변경
+url: https://gustj5092.github.io  # ← 여기에 본인 GitHub 아이디로 변경
 baseurl:
 last_updated: true
 impressum_path:
@@ -65,7 +65,7 @@ og_image:
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: [본인GitHub아이디]         # ← 변경
+github_username: gustj5092       # ← 변경
 linkedin_username:                         # ← LinkedIn 있으면 입력
 scholar_userid:                            # ← Google Scholar 있으면 입력
 orcid_id:
