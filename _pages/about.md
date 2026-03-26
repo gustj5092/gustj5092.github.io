@@ -6,7 +6,7 @@ subtitle: B.S. Mechanical Engineering · <a href="https://www.yonsei.ac.kr">Yons
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.png
   image_circular: false
   more_info: >
     <p>Seoul, Republic of Korea</p>
