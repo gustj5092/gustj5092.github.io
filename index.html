@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyeonseo Oh</title>
+<meta name="description" content="Hyeonseo Oh — undergraduate researcher in autonomous driving and robotics at Yonsei University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7;
+    --ink:#1c1f24;
+    --ink-2:#4a4f58;
+    --ink-3:#7c828c;
+    --rule:#dcd9d2;
+    --accent:#1f5f73;
+    --accent-soft:#e6eef1;
+    --max:760px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+  .nav-in{max-width:var(--max);margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-name{font-family:"Newsreader",Georgia,serif;font-size:20px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+  .nav-links{display:flex;gap:18px;font-size:14px;color:var(--ink-2);flex-wrap:wrap;justify-content:flex-end}
+  .nav-links a{color:var(--ink-2)}
+  .nav-links a:hover{color:var(--accent)}
+
+  main{max-width:var(--max);margin:0 auto;padding:0 24px 96px}
+
+  /* hero */
+  .hero{padding:72px 0 48px;display:grid;grid-template-columns:1fr 150px;gap:32px;align-items:start}
+  .hero h1{font-family:"Newsreader",Georgia,serif;font-size:48px;font-weight:500;line-height:1.05;letter-spacing:-.02em;margin:0 0 6px}
+  .hero .ko{font-family:"Newsreader",Georgia,serif;font-size:20px;color:var(--ink-3);margin:0 0 20px}
+  .hero p{margin:0 0 14px;color:var(--ink-2);max-width:58ch}
+  .hero .focus{color:var(--ink);font-size:17px}
+  .portrait{width:150px;height:150px;border-radius:50%;object-fit:cover;background:var(--accent-soft);border:1px solid var(--rule)}
+  .contact{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:22px;font-size:14px}
+  .contact a{display:inline-flex;align-items:center;gap:6px}
+  .contact svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  /* sections */
+  section{padding:40px 0 8px;border-top:1px solid var(--rule)}
+  h2{font-family:"Newsreader",Georgia,serif;font-size:28px;font-weight:500;letter-spacing:-.01em;margin:0 0 22px}
+  h3{font-size:16px;font-weight:600;margin:0 0 2px}
+  .muted{color:var(--ink-3);font-size:14px}
+  .org{color:var(--ink-2)}
+
+  /* dated rows */
+  .row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-top:1px dashed var(--rule)}
+  .row:first-of-type{border-top:none}
+  .when{color:var(--ink-3);font-size:14px;padding-top:2px;font-variant-numeric:tabular-nums}
+  .row p{margin:4px 0 0;color:var(--ink-2);font-size:15px}
+  .row ul{margin:6px 0 0;padding-left:18px;color:var(--ink-2);font-size:15px}
+  .row li{margin:2px 0}
+
+  /* publications */
+  .pub{padding:16px 0;border-top:1px dashed var(--rule)}
+  .pub:first-of-type{border-top:none}
+  .pub .title{font-family:"Newsreader",Georgia,serif;font-size:19px;font-weight:500;line-height:1.3;margin:0 0 4px}
+  .pub .authors{font-size:14.5px;color:var(--ink-2);margin:0 0 2px}
+  .pub .authors b{font-weight:600;color:var(--ink)}
+  .pub .venue{font-size:14px;color:var(--ink-3);margin:0 0 6px}
+  .pub .venue i{font-style:italic}
+  .pub .abs{font-size:14.5px;color:var(--ink-2);margin:0}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:1px}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:150px 1fr;gap:10px 16px;font-size:15px}
+  .skills dt{color:var(--ink-3);font-size:14px;padding-top:1px}
+  .skills dd{margin:0;color:var(--ink-2)}
+
+  footer{max-width:var(--max);margin:0 auto;padding:24px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-3)}
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:1fr;padding-top:40px}
+    .hero h1{font-size:38px}
+    .portrait{order:-1;width:112px;height:112px}
+    .row,.skills{grid-template-columns:1fr;gap:4px}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sections">
+  <div class="nav-in">
+    <a class="nav-name" href="#top">Hyeonseo Oh</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#awards">Awards</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <div>
+      <h1>Hyeonseo Oh</h1>
+      <p class="ko">오현서</p>
+      <p class="focus">Undergraduate researcher in autonomous driving and robotics at Yonsei University, working on safe decision-making and control: model-based optimal control, learning-based end-to-end driving, and the safety layer that sits between them.</p>
+      <p>I build driving and locomotion policies in simulation and then push them onto hardware, which is where most of my interest now lives: system identification, sim-to-real gaps, and the data and verification pipelines that tell you whether a policy actually works before it leaves the simulator.</p>
+      <p>B.S. in Mechanical Engineering, Yonsei University (expected Feb. 2027). Founder and vice president of <a href="https://www.instagram.com/yonsei_yax/">YAX</a>, the first autonomous driving and robotics club at Yonsei.</p>
+      <div class="contact">
+        <a href="mailto:gustj5092@yonsei.ac.kr"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>gustj5092@yonsei.ac.kr</a>
+        <a href="https://github.com/gustj5092"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7a5.2 5.2 0 0 0-1.5-3.6 4.8 4.8 0 0 0-.1-3.6s-1.2-.4-3.9 1.4a13.4 13.4 0 0 0-7 0C6.1 1.6 4.9 2 4.9 2a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 3.3 9.2c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>GitHub</a>
+        <a href="assets/pdf/Hyeonseo_Oh_CV.pdf"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV (PDF)</a>
+      </div>
+    </div>
+    <img class="portrait" src="assets/img/profile.jpg" alt="Hyeonseo Oh" onerror="this.style.visibility='hidden'">
+  </header>
+
+  <section id="news">
+    <h2>News</h2>
+    <div class="row"><div class="when">Aug. 2026</div><div>Finished a two-month training placement at <b>Diden Robotics</b> (Motion Intelligence Team), working on quadruped motion tracking and actuator system identification.</div></div>
+    <div class="row"><div class="when">Jun. 2026</div><div>Submitted a first-author paper on uncertainty-gated residual RL and re-distillation for end-to-end racing to <b>KSAE Fall 2026</b> (under review).</div></div>
+    <div class="row"><div class="when">May 2026</div><div>Presented a first-author poster on safety-aware trajectory re-ranking at <b>KSAE Spring 2026</b>. Competed in the <b>A1 Autonomous Car Challenge 2026</b> as team lead of the only all-undergraduate team.</div></div>
+    <div class="row"><div class="when">Nov. 2025</div><div>YAX received an award at the <b>HL FMA Autonomous Driving Competition 2025</b>.</div></div>
+    <div class="row"><div class="when">Sep. 2025</div><div>Founded <b>YAX</b>, Yonsei's first autonomous driving and robotics club.</div></div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <div class="when">Mar. 2021 – Feb. 2027 (expected)</div>
+      <div>
+        <h3>Yonsei University, Seoul</h3>
+        <p>B.S. in Mechanical Engineering. Coursework includes control engineering, optimal control, robotics, machine learning, embedded systems, mechatronics, and an undergraduate research thesis.</p>
+        <p class="muted">Military service: Republic of Korea Army, intelligence specialist, May 2022 – Nov. 2023.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <div class="when">Jun. 2026 – Aug. 2026</div>
+      <div>
+        <h3>Diden Robotics, Seoul</h3>
+        <p class="org">Trainee, Software and Motion Intelligence Team (model-based control)</p>
+        <ul>
+          <li>Retargeted human motion data to robot joint structure to build reference motions and trained tracking policies with asymmetric PPO, DeepMimic, and AMP. Built a tool that automatically flags physically impossible frames (self-collision, ground penetration).</li>
+          <li>Ported and generalized a Unitree Go2 motion-tracking pipeline to a new version; tracking accuracy improved from 62% to 96% after tracing a recurring training failure to a quaternion ordering bug.</li>
+          <li>Deployed simulated locomotion policies on a 12-DoF quadruped and traced the sim-to-real gap to actuator modeling. Ran chirp excitation (0.1–10 Hz) with CMA-ES fitting to identify motor and gearbox parameters; added a torque channel to the loss to break parameter degeneracy and validated torque prediction out-of-sample (R² 0.92–0.97).</li>
+          <li>Set up a GPU-parallel MuJoCo-Warp environment (4,096 instances) for sim-to-sim parameter recovery checks before touching hardware.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Jan. 2025 – May 2026</div>
+      <div>
+        <h3>MLCS Lab (Machine Learning and Control Systems), Yonsei University</h3>
+        <p class="org">Undergraduate research intern, advisor Prof. Jongeun Choi</p>
+        <ul>
+          <li>Participated in a trust-region CBF project for safety under estimation error: simulation validation and derivation of a closed-form QCQP solution via KKT conditions.</li>
+          <li>Research poster on improving the safety and stability of MPPI, balancing conservatism in curves against aggressiveness on straights.</li>
+          <li>Combined an end-to-end driving planner with a game-theoretic CBF for racing control (linked to the A1 Challenge).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Sep. 2025 – Dec. 2025</div>
+      <div>
+        <h3>Rem² Lab, Yonsei University</h3>
+        <p class="org">Undergraduate researcher</p>
+        <ul>
+          <li>2D electromagnetic analysis of DC/BLDC motors in FEMM: flux density and torque ripple vs. winding count, magnet shape, and air gap; torque–speed curves and sensitivity analysis in MATLAB.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Sep. 2025 – Jun. 2026</div>
+      <div>
+        <h3>YAX, Yonsei University</h3>
+        <p class="org">Founder and vice president</p>
+        <ul>
+          <li>Started the club and designed its curriculum: paper study, simulation (MORAI, Autoware), competition stacks, and finally conference papers. Club research led to a first-author KSAE poster.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <p class="title">Uncertainty- and risk-gated residual reinforcement learning with re-distillation for long-tail interaction learning in camera-based end-to-end autonomous racing</p>
+      <p class="authors"><b>Hyeonseo Oh</b>*, Hyunjun Choi &nbsp;<span class="muted">*corresponding author</span></p>
+      <p class="venue"><i>KSAE Fall Conference 2026</i><span class="tag">under review</span></p>
+      <p class="abs">Treats RL as a transient teacher rather than a deployed component. A three-part gate (distance, MC-Dropout epistemic uncertainty, TTC-based risk) decides when the residual RL policy may intervene; only gated segments are re-distilled into the imitation-learning base over 10 rounds, after which RL is removed. On a 10-minute multi-car scenario the distilled model shows 33% fewer collisions and 24% higher average speed than the residual-RL system, with 3.3x more overtaking attempts.</p>
+    </article>
+
+    <article class="pub">
+      <p class="title">Safety-aware trajectory re-ranking for multimodal end-to-end autonomous driving planners</p>
+      <p class="authors"><b>Hyeonseo Oh</b>, Chungman Kwon, Woongje Jo, Siho Kim</p>
+      <p class="venue"><i>KSAE Spring Conference 2026</i>, poster, paper no. 26SKSAEJ0222</p>
+      <p class="abs">A three-stage external safety layer that verifies a planner's output trajectories without modifying or retraining it: clearance/TTC hard rejection, soft re-scoring, and an emergency-deceleration fallback. Evaluated open-loop on Autoware logs first, then closed-loop in CARLA on 30 randomized cut-in scenarios; collision rate 100% to 0%, peak deceleration 15.0 to 1.8 m/s², with sensitivity analysis over the thresholds.</p>
+    </article>
+
+    <article class="pub">
+      <p class="title">Knowledge-graph-based semantic scene understanding for autonomous driving in dilemma situations</p>
+      <p class="authors">Woongje Jo, <b>Hyeonseo Oh</b>, Junseok Lee, Siho Kim</p>
+      <p class="venue"><i>KSAE Spring Conference 2026</i>, paper no. 26SKSAE_J023</p>
+      <p class="abs">Encodes traffic law, physics, and defensive-driving common sense as an OWL ontology (GraphDB, 811 asserted / 1,498 inferred triples) and compares LLM scene reasoning against a 3D scene graph under identical perception input. Mean score 4.41 vs 3.56 over 300 trials (p &lt; 0.001); ablations show the gain comes mainly from natural-language semantic descriptions rather than ontology structure alone.</p>
+    </article>
+  </section>
+
+  <section id="competitions">
+    <h2>Competitions</h2>
+
+    <div class="row">
+      <div class="when">Dec. 2025 – May 2026</div>
+      <div>
+        <h3>A1 Autonomous Car Challenge 2026</h3>
+        <p class="org">Team lead. Only all-undergraduate team in a field of graduate and company teams.</p>
+        <ul>
+          <li>Led a camera-only end-to-end driving policy (temporal ResNet, PyTorch) in MORAI, outputting steering, throttle, and brake.</li>
+          <li>20 rounds of DAgger against a Frenet Optimal Trajectory + Pure Pursuit expert; an opponent traffic generator to auto-collect overtaking and avoidance data.</li>
+          <li>Robustness: injected communication delay, packet drop, and JPEG compression during training. Multi-rate runtime (camera 20 Hz, control 60 Hz) with FP16 and preprocessing cache. UDP chunk reassembly with timeout and out-of-order handling.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Jun. 2025 – Sep. 2025</div>
+      <div>
+        <h3>HL FMA Autonomous Driving Competition 2025</h3>
+        <p class="org">Software lead. Award received Nov. 2025.</p>
+        <ul>
+          <li>Full stack (perception, localization, planning, control) on a 1/5-scale vehicle. After repeated integration failures, switched to fixing interfaces and acceptance criteria first, which shortened the integration cycle.</li>
+          <li>RTK-GPS to UTM localization with heading from GPS heading fused with position time-derivative; YOLOv8 traffic-light detection with a temporal-consistency filter to stop false-positive hard braking.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Oct. 2025 – Nov. 2025</div>
+      <div>
+        <h3>4th F1TENTH Korea Championship</h3>
+        <p class="org">Hardware and software</p>
+        <ul>
+          <li>From PCB design to a SLAM map and a 1M-step RL policy. The car retired on the real track because of the sim-to-real gap, which is where my "simulation performance is not performance until it is verified" rule comes from.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Sep. 2025 – Nov. 2025</div>
+      <div>
+        <h3>KSAE Student Formula, autonomous division</h3>
+        <p class="org">Team lead</p>
+        <ul>
+          <li>RANSAC/DBSCAN cone detection with LiDAR–camera fusion. Eliminated in qualifying: the path planner ignored tire friction and lateral acceleration, producing geometrically valid but untrackable paths. Fixed afterwards with curvature-based speed planning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="when">Apr. 2025 – Jun. 2025</div>
+      <div>
+        <h3>Kookmin University Autonomous Driving Competition</h3>
+        <p class="org">Team lead</p>
+        <ul>
+          <li>BEV transform + HSV + sliding-window lane detection, curvature-adaptive PID for longitudinal and lateral control.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Honors and awards</h2>
+    <div class="row"><div class="when">Nov. 2025</div><div>HL FMA Autonomous Driving Competition, encouragement award. Halla University SW-Centered University Project.</div></div>
+    <div class="row"><div class="when">Mar. 2025</div><div>1st ZYXCAD Design Competition, encouragement award. ZYX Technology.</div></div>
+    <div class="row"><div class="when">Jun. 2024</div><div>Outstanding Support Staff Commendation, Yonsei University Ethics and Human Rights Committee, for supporting a visually impaired classmate and producing braille study materials.</div></div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Control and optimization</dt><dd>MPC, MPPI, LQR, PID, lead-lag, QP/QCQP, KKT conditions, control barrier functions (robust CBF, TRCBF), Frenet optimal trajectory, pure pursuit</dd>
+      <dt>Learning</dt><dd>Imitation learning (DAgger, Diffusion Policy, ACT), reinforcement learning (PPO, asymmetric PPO, SAC, residual RL), knowledge distillation, DeepMimic, AMP, MC-Dropout uncertainty</dd>
+      <dt>Perception and state estimation</dt><dd>YOLOv8, BEV lane detection, RANSAC, DBSCAN, LiDAR–camera fusion, SLAM, RTK-GPS/UTM</dd>
+      <dt>Simulation</dt><dd>MORAI, CARLA, Autoware, MuJoCo and MuJoCo-Warp, Isaac Lab, ROS and ROS 2</dd>
+      <dt>Verification and sys-ID</dt><dd>Open-loop / closed-loop evaluation design, scenario randomization, noise and delay injection, sensitivity and ablation studies, sim-to-sim parameter recovery, chirp excitation, CMA-ES</dd>
+      <dt>Languages and tools</dt><dd>Python, PyTorch, MATLAB/Simulink, C/C++ (working level within ROS and Autoware), LabVIEW, FEMM, Creo, Fusion 360, Git, Linux</dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer>Last updated October 2026.</footer>
+
+</body>
+</html>
